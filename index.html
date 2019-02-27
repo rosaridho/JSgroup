@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <title>On Click Game</title>
+</head>
+
+<body>
+    <div class="album" class="backgroundCLick">
+        <div class="container-fluid" id="level-1">
+            <span id="kotak-level1" onClick="PickDote4()"></span>
+            <div class="row">
+                <div class="col-md-3 offset-md-3">
+                    <div style="text-align:center">
+                        <h1>Click The Red Circle!</h1>
+                        <div class="iconLive">
+                            <i class="fas fa-heart fa-3x" id="live1" ></i>
+                            <i class="fas fa-heart fa-3x" id="live2"></i>
+                            <i class="fas fa-heart fa-3x" id="live3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="text-align:center">
+                    <div class="col-md-4">
+                        <span id="dot1-level1" onClick="PickDote1()"></span>
+                    </div>
+                    <div class="col-md-4">
+                        <span id="dot2-level1" onClick="PickDote2()"></span>
+                    </div>
+                    <div class="col-md-4">
+                        <span id="dot3-level1" onClick="PickDote3()"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
