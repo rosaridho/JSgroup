@@ -152,30 +152,9 @@
   background-color: rgb(255, 31, 1);
 }
 
-/************************************************************************/
-#lovelife{
+#iconLive {
   color: red;
-  /* -webkit-text-stroke-width: 5px;
-  -webkit-text-stroke-color: black; */
-  display: fixed;
 }
-
-#love1 {
-  float: left;
-  padding: 0 5px;
-}
-
-#love2 {
-  float: left;
-  padding: 0 5px;
-}
-
-#love3 {
-  float: left;
-  padding: 0 5px;
-}
-
-
 
 /************************ random ****************************************/
 
@@ -208,10 +187,17 @@
   border-radius: 50%;
   display: inline-flex;
   position: relative;
-}
+};
 
-
-.fas {color: red}
+#dot4-level1 {
+  height: 76px;
+  width: 76px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-flex;
+  position: relative;
+  right: 200px;
+};
 
 #kotak-level1{
   width: 1300px;
@@ -224,8 +210,18 @@
 }
 
 /***************************************************************/
-
-#level-1{
-  display: none;
+/* #level-live{
+  display: none
 }
 
+#level-1{
+  display: none
+}
+
+#level-2{
+  display: none
+}
+
+#level-3{
+  display: none
+} */

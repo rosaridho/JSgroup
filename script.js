@@ -9,10 +9,17 @@
 // idxLove = 0
 // start.addEventListener("click", move);
 
-//Level 1
+//pageGame
+let level1 = document.getElementById("level-1");
+let level2 = document.getElementById("level-2");
+let level3 = document.getElementById("level-3");
+arrlevel = [level1, level2, level3, level4];
+
+//dot
 let dot1 = document.getElementById("dot1-level1");
 let dot2 = document.getElementById("dot2-level1");
 let dot3 = document.getElementById("dot3-level1");
+let dot4 = document.getElementById("dot4-level1");
 let bckgrnClick = document.getElementById("kotak-level1");
 
 //lives
@@ -23,9 +30,8 @@ let arrHati = [hati1, hati2, hati3]
 let idx = 0;
 
 
-
-
 function move() {
+  document.getElementById("level-live").style.display = "Block"
     document.getElementById("level-0").style.display = "None"
     document.getElementById("level-1").style.display = "Block"
     
@@ -65,6 +71,7 @@ function PickDote1() {
 }
 
 function PickDote2() {
+  alert(arrHati[idx])
   arrHati[idx].style.opacity = 0;
   idx += 1;
   if (idx >=3) {
@@ -89,4 +96,33 @@ function PickDote4() {
       alert ("GAME OVER")
       location.reload();
   };
-}
+};
+
+//--------------------------------------------Level 2
+
+function PickDote5(){
+  arrHati[idx].style.opacity = 0;
+  idx += 1;
+  if (idx >=3) {
+      alert ("GAME OVER")
+  };
+};
+
+//H1 click
+h1lev2 = document.getElementById(onceAgain)
+function H1level2(){
+  alert('Yeay, Next Level!');
+  arrlevel[0].style.display = "None"
+  arrlevel[1].style.display = "None"
+  arrlevel[2].style.display = "Block"
+};
+
+//--------------------------------------------Level 3
+//circle blue
+function PickDote6() {
+  alert('Yeay, Next Level!');
+  arrlevel[0].style.display = "None"
+  arrlevel[1].style.display = "None"
+  arrlevel[2].style.display = "None"
+  arrlevel[3].style.display = "Block"
+};
