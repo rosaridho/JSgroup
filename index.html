@@ -2,43 +2,115 @@
 <html>
 
 <head>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Games Homepage</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <title>On Click Game</title>
+    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=8YGlzSl6cxU&name=Kahoot+music+for+10+hours"
+        frameborder="0" allowfullscreen></iframe>
 </head>
 
 <body>
-    <div class="album" class="backgroundCLick">
-        <div class="container-fluid" id="level-1">
-            <span id="kotak-level1" onClick="PickDote4()"></span>
+    <div class="album background p-0 m-0" id="level-0">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 offset-md-3">
-                    <div style="text-align:center">
-                        <h1>Click The Red Circle!</h1>
-                        <div class="iconLive">
-                            <i class="fas fa-heart fa-3x" id="live1" ></i>
-                            <i class="fas fa-heart fa-3x" id="live2"></i>
-                            <i class="fas fa-heart fa-3x" id="live3"></i>
+                <div class="col-md-5 offset-md-4">
+                    <div class="gameTitle">
+                        <h1>Click Circle!</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-9 offset-md-2">
+                    <div class="level_header">
+                        <h1>Choose your level of game</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-4">
+                    <div class="level_body">
+                        <div id="amateur">
+                            <label class="container">Amateur
+                                <input type="radio" checked="checked" name="radio" id="amateurstat">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div id="beginner">
+                            <label class="container">Beginner
+                                <input type="radio" name="radio" id="beginnerstat">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div id="pro">
+                            <label class="container">Pro
+                                <input type="radio" name="radio" id='prostat'>
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
             <div class="row">
-                <div style="text-align:center">
-                    <div class="col-md-4">
-                        <span id="dot1-level1" onClick="PickDote1()"></span>
-                    </div>
-                    <div class="col-md-4">
-                        <span id="dot2-level1" onClick="PickDote2()"></span>
-                    </div>
-                    <div class="col-md-4">
-                        <span id="dot3-level1" onClick="PickDote3()"></span>
+                <div class="col-md-3 offset-md-5">
+                    <div class="startGame">
+                        <button type="button" onclick="move()" class="startGameButton">Start</button>
                     </div>
                 </div>
             </div>
+            <br>
         </div>
     </div>
+
+    <!--  -->
+
+    <div class="album" class="backgroundCLick">
+        <div class="container-fluid" id="level-1">
+            <span id="kotak-level1" onClick="PickDote4()"></span>
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <h1>Click The Red Circle!</h1>
+                    <div class="iconLive">
+                        <i class="fas fa-heart fa-3x" id="live1"></i>
+                        <i class="fas fa-heart fa-3x" id="live2"></i>
+                        <i class="fas fa-heart fa-3x" id="live3"></i>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-1 offset-md-1">
+                    <span id="dot1-level1" onClick="PickDote1()"></span>
+                </div>
+                <div class="col-md-1 offset-md-3">
+                    <span id="dot2-level1" onClick="PickDote2()"></span>
+                </div>
+                <div class="col-md-1 offset-md-3">
+                    <span id="dot3-level1" onClick="PickDote3()"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="timerBar">
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+    <!--  -->
     <script src="script.js"></script>
 </body>
 

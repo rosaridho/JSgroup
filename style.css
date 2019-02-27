@@ -1,46 +1,231 @@
+/* Customize the label (the container) */
+.container {
+  display: inline;
+  position: relative;
+  padding-left: 60px;
+  font-size: 30px;
+}
+
+.level_header h1{
+  text-align: center;
+  color: rgba(82, 31, 1, 0.884);
+  font-weight: bold;
+  font-size: 80px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 45px;
+  background-color: rgb(241, 12, 12);
+  border-radius: 20%;
+}
+
+/* add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: rgb(202, 94, 5);
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgb(5, 38, 226);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-weight: 900;
+  font-size: 30px;
+  padding-left: 5px;
+}
+
+/*******************************************************/
+
+.background {
+  background-image: url(./bg2.jpeg);
+  background-size: 100% 100%;
+  z-index: 100;
+  position: relative;
+  opacity: 0.9;
+}
+
+.gameTitle h1{
+  font-size: 100px;
+  font-style: italic;
+  color: rgba(82, 31, 1, 0.884);
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+.album {
+  margin:0;
+  padding: 0;
+}
+
+.container-fluid{
+  margin:0;
+  padding: 0;
+}
+
+#amateur {
+  float: left;
+  padding: 0 5px;
+  color: black;
+  font-weight: bold;
+}
+
+#beginner {
+  float: left;
+  padding: 0 5px;
+  color: black;
+  font-weight: bold;
+}
+
+#pro {
+  float: left;
+  padding: 0 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.level_body{
+  color: black;
+  font-weight: bold;
+}
+
+/*******************************************************/
+
+.startGameButton{
+  color: white;
+  background-color: rgb(255, 136, 0);
+  border-radius: 10px;
+  border: 1px;
+  transition: all 0.5s;
+  font-size: 60px;
+  padding: 5px 50px;
+  border-color: red;
+}
+
+.startGameButton:hover {
+  background-color: red !important;
+  transition: 2s;
+  border-color: red;
+  border: 1px;
+}
+
+/*******************************************************/
+#myProgress {
+  width: 75%;
+  background-color: white;
+  margin-left: 125px;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: rgb(255, 31, 1);
+}
+
+/************************************************************************/
+#lovelife{
+  color: red;
+  /* -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black; */
+  display: fixed;
+}
+
+#love1 {
+  float: left;
+  padding: 0 5px;
+}
+
+#love2 {
+  float: left;
+  padding: 0 5px;
+}
+
+#love3 {
+  float: left;
+  padding: 0 5px;
+}
+
+
+
+/************************ random ****************************************/
+
 #dot1-level1 {
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    border-radius: 50%;
-    display: inline-flex;
-    position: relative;
-    top: 40px;
-    right: 130px;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-flex;
+  position: relative;
+  /* top: 40px; */
+  /* right: 130px; */
 }
 
 #dot2-level1 {
-    height: 60px;
-    width: 60px;
-    background-color: yellow;
-    border-radius: 50%;
-    display: inline-flex;
-    position: relative;
-    bottom: 70px;
-    left: 70px;
+  height: 60px;
+  width: 60px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-flex;
+  position: relative;
+  /* bottom: 70px; */
+  /* left: 70px; */
 }
 
 #dot3-level1 {
-    height: 30px;
-    width: 30px;
-    background-color: green;
-    border-radius: 50%;
-    display: inline-flex;
-    position: relative;
+  height: 30px;
+  width: 30px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-flex;
+  position: relative;
 }
 
-.backgroundCLick{
-    background-color: black;
-    opacity: 0.1;
-    z-index: 2;
-}
+
 .fas {color: red}
 
 #kotak-level1{
-    width: 1275px;
-    height: 400px;
-    background-color: white;
-    opacity: 0.1;
-    display: inline-flex;
-    position: absolute;
+  width: 1300px;
+  height: 600px;
+  background-color: red;
+  opacity: 0.1;
+  display: inline-flex;
+  position: absolute;
+  margin-left: 30px;
 }
+
+/***************************************************************/
+
+#level-1{
+  display: none;
+}
+
