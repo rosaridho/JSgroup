@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Games Homepage</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=8YGlzSl6cxU&name=Kahoot+music+for+10+hours"
+        frameborder="0" allowfullscreen></iframe>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="album background p-0 m-0" id="level-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 offset-md-5">
+                    <div class="gameTitle">
+                        <h1>Click Circle!</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-9 offset-md-2">
+                    <div class="level_header">
+                        <h1>Choose your level of game</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6 offset-md-4">
+                    <div class="level_body">
+                        <div id="amateur">
+                            <label class="container">Amateur
+                                <input type="radio" checked="checked" name="radio" id="amateurstat">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div id="beginner">
+                            <label class="container">Beginner
+                                <input type="radio" name="radio" id="beginnerstat">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div id="pro">
+                            <label class="container">Pro
+                                <input type="radio" name="radio" id='prostat'>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-3 offset-md-5">
+                    <div class="startGame">
+                        <button type="button" onclick="init()" class="startGameButton">Start</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <!-- level 1 -->
+    <div class="album">
+        <div id="iconLive">
+            <i class="fas fa-heart fa-3x" id="live1"></i>
+            <i class="fas fa-heart fa-3x" id="live2"></i>
+            <i class="fas fa-heart fa-3x" id="live3"></i>
+        </div>
+        <div class="container-fluid" id="level-1">
+            <span id="kotak-level1" onClick="PickDote4()"></span>
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <h1 style="text-align:center">Click The Red Circle!</h1>
+                </div>
+            </div>
+            <br>
+            <div id="timerBar">
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-1 offset-md-2">
+                    <span id="dot1-level1" onClick="PickDote1()"></span>
+                </div>
+                <div class="col-md-1 offset-md-1">
+                    <span id="dot2-level1" onClick="PickDote2()"></span>
+                </div>
+                <div class="col-md-1 offset-md-2">
+                    <span id="dot3-level1" onClick="PickDote3()"></span>
+                </div>
+                <div class="col-md-1 offset-md-2">
+                    <span id="dot4b-level1" onClick="PickDote3()"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 offset-md-2">
+                    <span id="dot1-level2" onClick="PickDote2()" style="background-color: aqua"></span>
+                </div>
+                <div class="col-md-1 offset-md-2">
+                    <span id="dot2-level2" onClick="PickDote2()" style="background-color: purple"></span>
+                </div>
+                <div class="col-md-1 offset-md-1">
+                    <span id="dot3-level2" onClick="PickDote3()" style="background-color: green"></span>
+                </div>
+                <div class="col-md-1 offset-md-1">
+                    <span id="dot4-level2" onClick="PickDote3()" style="background-color: blue"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 offset-md-1">
+                    <span id="dot1-level3" onClick="PickDote2()" style="background-color: yellowgreen"></span>
+                </div>
+                <div class="col-md-1 offset-md-1">
+                    <span id="dot2-level3" onClick="PickDote2()" style="background-color: black"></span>
+                </div>
+                <div class="col-md-1 offset-md-2">
+                    <span id="dot3-level3" onClick="PickDote3()" style="background-color: purple"></span>
+                </div>
+                <div class="col-md-1 offset-md-2">
+                    <span id="dot4-level3" onClick="PickDote3()" style="background-color: yellow"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <!-- 2  -->
+    <div class="container-fluid" id="level-2">
+        <span id="kotak-level1" onClick="PickDote4()"></span>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div style="text-align:center">
+                    <h1 id="onceAgain" onclick="H1level2()" style="text-align:center">Click Once again!</h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="timerBar2">
+            <div id="myProgress2">
+                <div id="myBar2"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-1 offset-md-1">
+                <span id="dot1a-level1" onClick="PickDote5()"></span>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <span id="dot2a-level1" onClick="PickDote2()"></span>
+            </div>
+            <div class="col-md-1 offset-md-3">
+                <span id="dot3a-level1" onClick="PickDote3()"></span>
+            </div>
+            <div class="col-md-1 offset-md-2">
+                <span id="dot4a-level1" onClick="PickDote3()"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 offset-md-1">
+                <span id="dot1a-level2" onClick="PickDote2()" style="background-color: aqua"></span>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <span id="dot2a-level2" onClick="PickDote2()" style="background-color: purple"></span>
+            </div>
+            <div class="col-md-1 offset-md-2">
+                <span id="dot3a-level2" onClick="PickDote3()" style="background-color: green"></span>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <span id="dot4a-level2" onClick="PickDote3()" style="background-color: blue"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 offset-md-1">
+                <span id="dot1a-level3" onClick="PickDote2()" style="background-color: yellowgreen"></span>
+            </div>
+            <div class="col-md-1 offset-md-2">
+                <span id="dot2a-level3" onClick="PickDote2()" style="background-color: black"></span>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <span id="dot3a-level3" onClick="PickDote3()" style="background-color: purple"></span>
+            </div>
+            <div class="col-md-1 offset-md-2">
+                <span id="dot4a-level3" onClick="PickDote3()" style="background-color: yellow"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <!-- 3 -->
+    <div class="container-fluid" id="level-3">
+        <span id="kotak-level1" onClick="PickDote4()"></span>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div style="text-align:center">
+                    <h1 style="color: green" style="text-align:center">Click The Blue Circle!</h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="timerBar3">
+            <div id="myProgress3">
+                <div id="myBar3"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-1 offset-md-2">
+                <span id="dot1b-level1" onClick="PickDote5()"></span>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <span id="dot2b-level1" onClick="PickDote2()"></span>
+            </div>
+            <div class="col-md-1 offset-md-2">
+                <span id="dot3b-level1" onClick="PickDote3()"></span>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <span id="dot4-level1" onClick="PickDote6()"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 offset-md-3">
+                <span id="dot1b-level2" onClick="PickDote2()" style="background-color: aqua"></span>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <span id="dot2b-level2" onClick="PickDote2()" style="background-color: purple"></span>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <span id="dot3b-level2" onClick="PickDote3()" style="background-color: green"></span>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <span id="dot4b-level2" onClick="PickDote3()" style="background-color: black"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 offset-md-2">
+                <span id="dot1b-level3" onClick="PickDote2()" style="background-color: yellowgreen"></span>
+            </div>
+            <div class="col-md-1 offset-md-2">
+                <span id="dot2b-level3" onClick="PickDote2()" style="background-color: black"></span>
+            </div>
+            <div class="col-md-1 offset-md-0">
+                <span id="dot3b-level3" onClick="PickDote3()" style="background-color: purple"></span>
+            </div>
+            <div class="col-md-1 offset-md-2">
+                <span id="dot4b-level3" onClick="PickDote3()" style="background-color: yellow"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
