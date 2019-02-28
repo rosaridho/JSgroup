@@ -1,25 +1,23 @@
-//Level 1
+// Pengaturan Level HTML atau bagian HTML
 let dot1 = document.getElementById("dot1-level1");
 let dot2 = document.getElementById("dot2-level1");
 let dot3 = document.getElementById("dot3-level1");
 let bckgrnClick = document.getElementById("kotak-level1");
 
-//lives
+//lives, nyawa untuk bermain
 let hati1 = document.getElementById("live1");
 let hati2 = document.getElementById("live2");
 let hati3 = document.getElementById("live3");
 let arrHati = [hati1, hati2, hati3];
 let idx = 0;
 
-//pageGame
+//pageGame , berhubungan dengan level HTML
 let level1 = document.getElementById("level-1");
 let level2 = document.getElementById("level-2");
 let level3 = document.getElementById("level-3");
 arrlevel = [level1, level2, level3];
 
-var globalVar = true;
-
-/****************************************************************** */
+/********************************Animasi random movement********************************** */
 
 $(document).ready(function(){
   animateDiv('#dot1-level1');
@@ -63,8 +61,8 @@ $(document).ready(function(){
 });
 
 function makeNewPosition(){
-  let h = -200;
-  let w = -200;
+  let h = -250;
+  let w = -250;
   let nh = Math.floor(Math.random() * h);
   let nw = Math.floor(Math.random() * w);
 
@@ -85,7 +83,7 @@ function animateDiv(myclass){
   });
 }
 
-/********************************************************************* */
+/**************************************inisiasi ******************************* */
 
 function init(){
     document.getElementById("iconLive").style.display = "Block";
@@ -95,6 +93,8 @@ function init(){
     move2();
     move3();
 }
+
+/**************************************time bar ****************************** */
 
 function move() {
     let amateur = document.getElementById("amateurstat").checked;
@@ -185,6 +185,7 @@ function move3() {
   }
 }
 
+/************************************sequence games************************* */
 
 function PickDote1() {
   alert('Yeay, Next Level!');
